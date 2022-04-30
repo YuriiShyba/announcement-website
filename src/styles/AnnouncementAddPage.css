@@ -1,0 +1,57 @@
+.announcement-add-page__container {
+    margin: 55px 25px 0;
+    max-width: 1200px;
+}
+.announcement-add-page__container form {
+    text-align: center;
+}
+.announcement-add-page__container form > *:not(:last-child) {
+    margin: 0 0 30px 0;
+}
+#announcementAddTitle {
+    width: 100%;
+    resize: none;
+    border-radius: 25px;
+    padding: 5px 25px;
+    min-height: 4em;
+    overflow: auto;
+    font-size: 20px;
+}
+.announcement-add-page__label-for-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+#announcementAddBody {
+    width: 100%;
+    min-height: 12em;
+    resize: none;
+    border-radius: 25px;
+    padding: 5px 25px;
+    font-size: 16px;
+}
+.announcement-add-page__label-for-body {
+    font-size: 18px;
+    font-weight: bold;
+}
+.announcement-add-page__buttons-container * {
+    display: inline-block;
+}
+.announcement-add-page__buttons-container *:not(:last-child) {
+    margin: 0 15px 0 0;
+}
+#announcementAddSubmit {
+    width: 150px;
+    height: 50px;
+}
+#announcementAddBack {
+    width: 150px;
+    height: 50px;
+}
+.textareaElement {
+    width: 300px;
+    min-height: 17px;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

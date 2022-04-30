@@ -1,0 +1,24 @@
+.announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.announcements-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px 0 0 0;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .announcements-page {
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 620px) {
+    .announcements-page {
+        justify-content: center;
+    }
+} ;
