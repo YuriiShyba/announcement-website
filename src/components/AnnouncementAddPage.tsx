@@ -21,7 +21,7 @@ export default function AnnouncementAddPage({ onSubmit }: AnnouncementAddPagePro
                 onSubmit={(event) => {
                     event.preventDefault();
                     onSubmit(id, title, body);
-                    navigate('/announcements');
+                    navigate('/announcement-website/announcements/');
                 }}
             >
                 <label className="announcement-add-page__label-for-title" htmlFor="announcementAddTitle">
@@ -46,7 +46,7 @@ export default function AnnouncementAddPage({ onSubmit }: AnnouncementAddPagePro
                 />
                 <div className="announcement-add-page__buttons-container">
                     <input type="submit" value="Submit" id="announcementAddSubmit" />
-                    <button onClick={() => navigate('/announcements')} id="announcementAddBack">
+                    <button onClick={() => navigate('/announcement-website/announcements/')} id="announcementAddBack">
                         Back
                     </button>
                 </div>

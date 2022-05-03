@@ -21,7 +21,7 @@ const AnnouncementsPage: FunctionComponent<AnnouncementsPageProps> = ({ announce
     const [currentDrag, setCurrentDrag] = useState<IAnnouncement | null>(null);
 
     function ctrlClickHandler(announcement: IAnnouncement) {
-        navigate('/announcements/edit/' + announcement.id);
+        navigate('/announcement-website/announcements/edit/' + announcement.id);
     }
 
     function dragHandler(event: React.DragEvent<HTMLDivElement>, announcement: IAnnouncement) {

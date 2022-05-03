@@ -1,6 +1,6 @@
 {
     "name": "announcement-website",
-    "homepage": "http://yuriishyba.github.io",
+    "homepage": "http://yuriishyba.github.io/announcement-website",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

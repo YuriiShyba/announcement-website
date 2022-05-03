@@ -71,17 +71,17 @@ function App() {
             <Context.Provider value={announcements}>
                 <BrowserRouter>
                     <div className="page-links">
-                        <NavLink to={''} className="page-links__link">
+                        <NavLink to={'/announcement-website/'} className="page-links__link">
                             Home
                         </NavLink>
-                        <NavLink to={'/announcements/'} className="page-links__link">
+                        <NavLink to={'/announcement-website/announcements/'} className="page-links__link">
                             List of Announcements
                         </NavLink>
                     </div>
                     <Routes>
-                        <Route path="" element={<WelcomePage />} />
+                        <Route path="/announcement-website/" element={<WelcomePage />} />
                         <Route
-                            path="/announcements"
+                            path="/announcement-website/announcements"
                             element={
                                 <AnnouncementsPage
                                     announcements={searchResults.query ? searchResults.searchResults : announcements}
@@ -91,15 +91,15 @@ function App() {
                             }
                         />
                         <Route
-                            path="/announcements/:id"
+                            path="/announcement-website/announcements/:id"
                             element={<AnnouncementItemPage announcements={announcements} />}
                         />
                         <Route
-                            path="/announcements/new/:id"
+                            path="/announcement-website/announcements/new/:id"
                             element={<AnnouncementAddPage onSubmit={submitAddHandler} />}
                         />
                         <Route
-                            path="/announcements/edit/:id"
+                            path="/announcement-website/announcements/edit/:id"
                             element={
                                 <AnnouncementEditPage announcements={announcements} onSubmit={submitEditHandler} />
                             }

@@ -43,7 +43,7 @@ const AnnouncementItem: FunctionComponent<AnnouncementItemProps> = ({
     }
 
     function clickHandler(announcement: IAnnouncement) {
-        navigate('/announcements/' + announcement.id);
+        navigate('/announcement-website/announcements/' + announcement.id);
     }
 
     return (
