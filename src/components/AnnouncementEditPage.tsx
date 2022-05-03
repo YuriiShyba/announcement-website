@@ -28,7 +28,7 @@ const AnnouncementEditPage: FunctionComponent<AnnouncementEditPageProps> = ({ an
                 onSubmit={(event) => {
                     event.preventDefault();
                     onSubmit(announcement!.id, announcement!.title, announcement!.body);
-                    navigate('/announcements');
+                    navigate('/announcements/');
                 }}
             >
                 <label className="announcement-add-page__label-for-title" htmlFor="announcementAddTitle">
@@ -57,7 +57,7 @@ const AnnouncementEditPage: FunctionComponent<AnnouncementEditPageProps> = ({ an
                 />
                 <div className="announcement-add-page__buttons-container">
                     <input type="submit" value="Submit" id="announcementAddSubmit" />
-                    <button onClick={() => navigate('/announcements')} id="announcementAddBack">
+                    <button onClick={() => navigate('/announcements/')} id="announcementAddBack">
                         Back
                     </button>
                 </div>

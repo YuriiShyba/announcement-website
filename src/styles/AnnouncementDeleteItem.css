@@ -1,0 +1,41 @@
+.announcement-delete__container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 35px 55px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    background: rgb(255, 193, 193);
+    opacity: 0.5;
+}
+.announcement-delete__item {
+    padding: 150px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.announcement-delete__item::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 75px;
+    background-color: #f00;
+    transform: rotate(45deg);
+}
+.announcement-delete__item::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 75px;
+    background-color: #f00;
+    transform: rotate(-45deg);
+}
+.hidden {
+    display: none;
+}
+.hover {
+    opacity: 1;
+}
+.announcement-delete__item p {
+    margin: 105px 0 0 0;
+}

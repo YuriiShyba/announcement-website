@@ -11,6 +11,13 @@
     margin: 45px 0 0 0;
     width: 100%;
 }
+.announcements-page__no-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    margin: 55px 0;
+}
 
 @media (max-width: 1000px) {
     .announcements-page {
